@@ -1,0 +1,73 @@
+[{
+    "id": "12345678",
+    "titulo": "ROBLOX",
+    "desarrollador": "ROBLOX Corporation",
+    "genero": "Multijuegos",
+    "plataforma": "Multiplataforma",
+    "descripcion": "creatividad y explorar",
+    "imagenPortada": "https://i.pinimg.com/originals/1c/c3/f0/1cc3f0e25b1295a96648e8c2f12d2baf.jpg",
+    "añoLanzamiento": 2006,
+    "completado": false,
+    "fechaCreacion": "2006-10-07T05:00:00.000Z"
+  },
+  {
+    "id": "32423552",
+    "titulo": "Minecraft",
+    "desarrollador": "MOJANG",
+    "genero": "Mundo Abierto",
+    "plataforma": "PC",
+    "descripcion": "Supervivencia y creatividad",
+    "imagenPortada": "https://i.redd.it/snr2cl2g9xoe1.jpeg",
+    "añoLanzamiento": 2009,
+    "completado": true,
+    "fechaCreacion": "2009-10-07T05:00:00.000Z"
+  },
+  {
+    "id": "3e21421",
+    "titulo": "Free Fire",
+    "desarrollador": "Garena",
+    "genero": "Shooter",
+    "plataforma": "mobile",
+    "descripcion": "juego muy aburrido",
+    "imagenPortada": "https://images.sftcdn.net/images/t_app-cover-s,f_auto/p/075556d5-d706-4d17-a76e-1f403be46b3b/151916978/free-fire-gameloop-FF-1%20(1).png",
+    "añoLanzamiento": 2017,
+    "completado": false,
+    "fechaCreacion": "18/11/2017"
+  },
+  {
+    "id": "GM0001",
+    "titulo": "FC26",
+    "desarrollador": "EA Sports",
+    "genero": "Deportes",
+    "plataforma": "PS5",
+    "descripcion": "Futbol FC 26",
+    "imagenPortada": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGiIVXBTm7pfRM-ImgE92C5_0x2gMhWSPiUyNVGGOYZMcpVoxzotdgMhIV0RoWxo0pAqvEKZ4CWi2zEbsmv_209_HklTQ_JK2NoU_qWBM&s=10",
+    "añoLanzamiento": 2025,
+    "completado": false,
+    "fechaCreacion": "18/11/2025"
+  },
+  {
+    "id": "fab12a98-4a0b-497c-8d41-3956c8649a7a",
+    "titulo": "The Legend of Zelda: Breath of the Wild",
+    "desarrollador": "NINTENDO",
+    "genero": "Aventura",
+    "plataforma": "NINTENDO",
+    "descripcion": "es un videojuego de acción y aventura en un mundo abierto donde Link despierta tras un sueño de 100 años en el reino de Hyrule para derrotar a Ganon y salvar a la princesa Zelda ",
+    "imagenPortada": "https://www.nintendo.com/eu/media/images/10_share_images/games_15/wiiu_14/SI_WiiU_TheLegendOfZeldaBreathOfTheWild_image1600w.jpg",
+    "completado": true,
+    "fechaCreacion": "18/11/2025",
+    "añoLanzamiento": 2025
+  },
+  {
+    "id": "a4892a24-5ae8-4d2a-a78b-ef50152d1d12",
+    "titulo": "FORTNITE",
+    "desarrollador": "Epic Games",
+    "genero": "Shooter",
+    "plataforma": "PC",
+    "descripcion": "Fornais",
+    "imagenPortada": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrHYfjNfdwf1JuBtU7O91sANux3bPFgmy-7Q&s",
+    "añoLanzamiento": 2017,
+    "completado": true,
+    "fechaCreacion": "2025-11-16T23:47:06.323Z"
+  }
+]

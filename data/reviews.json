@@ -1,0 +1,24 @@
+[
+  {
+    "id": "3c458b73-87d7-437c-a677-1bfcbb9bd23c",
+    "juegoId": "a4892a24-5ae8-4d2a-a78b-ef50152d1d12",
+    "puntuacion": 5,
+    "textoReseña": "Battle Royale muy dinámico",
+    "horasJugadas": 6020,
+    "dificultad": "Normal",
+    "recomendaria": true,
+    "fechaCreacion": "2025-11-21T03:20:50.651Z",
+    "fechaActualizacion": "2025-11-21T14:47:52.856Z"
+  },
+  {
+    "id": "d2446729-fca8-461f-9d16-67053e57fffd",
+    "juegoId": "3e21421",
+    "puntuacion": 1,
+    "textoReseña": "es horrible",
+    "horasJugadas": 1000,
+    "dificultad": "Fácil",
+    "recomendaria": false,
+    "fechaCreacion": "2025-11-21T02:59:14.348Z",
+    "fechaActualizacion": "2025-11-21T02:59:14.348Z"
+  }
+]
