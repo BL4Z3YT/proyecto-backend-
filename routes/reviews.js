@@ -29,17 +29,24 @@ router.get('/juego/:juegoId', async (req, res) => {
 // POST /api/reseñas - Escribir nueva reseña
 router.post('/', async (req, res) => {
   const b = req.body || {};
- const puntuacion = Number(b.puntuacion ?? b.rating);
-  const textoReseña = typeof b.textoReseña === 'string' ? b.textoReseña.trim() : (typeof b.textoResena === 'string' ? b.textoResena.trim() : b.contenido?.trim());
-  const horasJugadas = Number(b.horasJugadas);
-  const dificultad = b.dificultad;
+  const juegoId = typeof b.juegoId === 'string' ? b.juegoId : (typeof b.gameId === 'string' ? b.gameId : (typeof b.reviewGame === 'string' ? b.reviewGame : ''));
+  let puntuacion = Number(b.puntuacion ?? b.rating);
+  const textoReseña = typeof b.textoReseña === 'string' ? b.textoReseña.trim() : (typeof b.textoResena === 'string' ? b.textoResena.trim() : (typeof b.reviewContent === 'string' ? b.reviewContent.trim() : b.contenido?.trim()));
+  let horasJugadas = Number(b.horasJugadas);
+  const diffRaw = (b.dificultad || '').toString();
+  const dificultad = diffRaw.toLowerCase() === 'facil' || diffRaw === 'fácil' ? 'Fácil'
+    : diffRaw.toLowerCase() === 'dificil' || diffRaw === 'difícil' ? 'Difícil'
+    : 'Normal';
   const recomendaria = !!b.recomendaria;
   const fechaCreacion = b.fechaCreacion ? new Date(b.fechaCreacion) : new Date();
   const fechaActualizacion = b.fechaActualizacion ? new Date(b.fechaActualizacion) : fechaCreacion;
 
-  if (!juegoId || !textoReseña || !Number.isFinite(puntuacion) || puntuacion < 1 || puntuacion > 5 || !Number.isFinite(horasJugadas) || horasJugadas < 0 || !['Fácil','Normal','Difícil'].includes(dificultad)) {
+  if (!juegoId || !textoReseña) {
     return res.status(400).json({ error: 'Datos inválidos en la reseña' });
   }
+  if (!Number.isFinite(puntuacion)) puntuacion = 3;
+  if (puntuacion < 1) puntuacion = 1; if (puntuacion > 5) puntuacion = 5;
+  if (!Number.isFinite(horasJugadas) || horasJugadas < 0) horasJugadas = 0;
 
   const payload = {
     id: b.id || generateId(),
