@@ -29,8 +29,7 @@ router.get('/juego/:juegoId', async (req, res) => {
 // POST /api/reseñas - Escribir nueva reseña
 router.post('/', async (req, res) => {
   const b = req.body || {};
-  const juegoId = typeof b.juegoId === 'string' ? b.juegoId : b.gameId; // compat
-  const puntuacion = Number(b.puntuacion ?? b.rating);
+ const puntuacion = Number(b.puntuacion ?? b.rating);
   const textoReseña = typeof b.textoReseña === 'string' ? b.textoReseña.trim() : (typeof b.textoResena === 'string' ? b.textoResena.trim() : b.contenido?.trim());
   const horasJugadas = Number(b.horasJugadas);
   const dificultad = b.dificultad;
